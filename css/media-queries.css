@@ -1,5 +1,36 @@
 @import url('http://fonts.cdnfonts.com/css/doctor-who');
-/*mobile view*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/*mobile view/default*/
+
+* {
+  font-family: 'Roboto', sans-serif;
+
+}
+li:hover {
+  background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@media screen and (max-width: 575px) {
+  .lg-screen {
+    /*visibility: hidden;*/
+    display: none;
+  }
+
+  .tiny-tardis {
+    max-width: 80%;
+    width: 80%;
+    float: right;
+
+  }
+
+}
 
 html, body {
   max-width: 100%;
@@ -31,12 +62,11 @@ h1 {
 ul {
   list-style: none;
   padding: 0;
-  color:white;
+  color: white;
 
 }
 
 li {
-  background-color: lightgrey;
   width: 100%;
   height: 42px;
   margin-top: 8px;
@@ -46,7 +76,10 @@ li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color:white;
+  color: white;
+  background: black;
+  border: solid 1px;
+  border-color: whitesmoke;
 }
 
 .alert-info {
@@ -70,13 +103,16 @@ li {
 }
 
 .nav-links li a {
-  color: blue;
+  color: white;
 }
-
 
 @media screen and (min-width: 576px) {
 
   .alert-info {
+    display: none;
+  }
+
+  .sm-screen {
     display: none;
   }
 
@@ -124,6 +160,9 @@ li {
     margin-bottom: 8em;
   }
 
+  .tiny-tardis {
+    display: none;
+  }
 }
 
 
