@@ -83,7 +83,7 @@ li {
 }
 
 .alert-info {
-  background-color: #c0ffff;
+  background-color: #EA684F;
   height: 40px;
   /*width: calc(100% - 2px);*/
   border: 1px black solid;
@@ -130,6 +130,7 @@ li {
 
   li {
     background-color: black;
+    border:none;
   }
 
   .nav-links li a {
